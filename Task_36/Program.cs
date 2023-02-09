@@ -15,7 +15,7 @@ int[] GetArray(int size,  int minValue, int maxValue)
 int sum(int[] array)
 {
     int sum2 = 0;
-    for (int i=1; i<array.Length; i+=2)
+    for (int i=0; i<array.Length; i+=2)
     {
     sum2= sum2+array[i];
     }
