@@ -14,14 +14,15 @@ int[] GetArray(int size,  int minValue, int maxValue)
 int Chetnye(int[] array)
 {
     int count=0;
-        for (int i=0; i<=array.Length; i++)
+    for (int i = 0; i < array.Length; i++)
     {
-        if ((array[i])%2==0)
-        count++;
+        if ((array[i]) %2 == 0) count++;
     }
     return count;
-}
-int[] array = GetArray(6, -999, 999);
+} 
+
+Console.Clear();
+int[] array = GetArray(20, -999, 1000);
 Console.WriteLine(String.Join(" ", array));
-Chetnye(array);
-Console.WriteLine($"array");
+int result = Chetnye(array);
+Console.WriteLine($"{result}");
