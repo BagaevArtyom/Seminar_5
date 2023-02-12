@@ -22,7 +22,7 @@ int Chetnye(int[] array)
 } 
 
 Console.Clear();
-int[] array = GetArray(20, -999, 1000);
+int[] array = GetArray(20, -999, 999);
 Console.WriteLine(String.Join(" ", array));
 int result = Chetnye(array);
 Console.WriteLine($"{result}");
