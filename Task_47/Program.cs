@@ -20,7 +20,7 @@ double[,] GetArray(int y, int x)
     {
         for (int j = 0; j < x; j++)
         {
-            result[y, x] = GetNumber();
+            result[i, j] = GetNumber();
         }
     }
     return result;
@@ -33,8 +33,8 @@ void PrintArray(double[,] array)
         for (int j=0; j<array.GetLength(1); j++)
         {
             Console.Write($"{array[i, j]}");
-            Console.WriteLine();
         }
+        Console.WriteLine();
     }
 }
 
