@@ -3,7 +3,7 @@
 
 Console.Clear();
 
-double DoubleRandom(int min, int max) //Случайное дробное число
+double DoubleRandom(int min, int max) //Случайное дробное число от 0 до 10
 {
     double total = 0;
     double randomDouble = new Random().NextDouble();
