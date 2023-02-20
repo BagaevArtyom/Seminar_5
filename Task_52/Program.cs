@@ -50,6 +50,8 @@ double[] NumberSum(int[,] inArray)
 
 
 
+
+
 Console.WriteLine("Введите кол-во строк: ");
 int a = int.Parse(Console.ReadLine()!);
 Console.WriteLine("Введите кол-во столбцов: ");
