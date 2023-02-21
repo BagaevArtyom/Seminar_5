@@ -14,29 +14,14 @@ int[,,] GetArray(int y, int x, int w)
         for (int j = 0; j < x; j++)
         {
             for (int z = 0; z < w; z++)
-            {
-                result[i, j, z] = new Random().Next(10, 99);
-            }
-            
+            {                   
+                result[i, j, z] = new Random().Next(10, 99);                
+                Console.Write($"{result[i,j,z]} ({i}, {j}, {z})   ");
+                
+            }            
         }
     }
     return result;
-}
-
-void PrintArray(int[,,] array)
-{
-    for (int i=0; i<array.GetLength(0); i++)
-    {
-        for (int j=0; j<array.GetLength(1); j++)
-        {
-            for (int z=0; z<array.GetLength(2); j++)
-            {
-                Console.Write($"{array[i, j, z]}\t");
-                
-            }
-            Console.WriteLine();
-        }
-    }
 }
 
 Console.Clear();
@@ -46,6 +31,5 @@ Console.WriteLine("Введите кол-во столбцов: ");
 int b = int.Parse(Console.ReadLine()!);
 Console.WriteLine("Введите кол-во ячеек в глубину: ");
 int c = int.Parse(Console.ReadLine()!);
-int[,,] array = GetArray(a, b, c);
-PrintArray(array);
+GetArray(a, b, c);
 
